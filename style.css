@@ -1,0 +1,252 @@
+/* CSS EKSTERNAL */
+
+/* Mengatur tampilan dasar website */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF9F5;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #654C48;
+}
+
+/* Mengatur jenis dan warna font heading */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #654C48;
+}
+
+/* Mengatur tampilan paragraf */
+p {
+    color: #775D58;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+/* Membuat paragraf rata kanan dan kiri */
+p.a,
+p.b,
+p.c {
+    text-align: justify;
+}
+
+/* Membuat dekorasi pada heading 2 */
+h2 {
+    color: #9D6173;
+    text-decoration: line-through;
+    text-decoration-color: #D9A5B3;
+    text-decoration-style: dotted;
+}
+
+/* Membuat dekorasi pada heading 3 */
+h3 {
+    color: #9D6173;
+    text-decoration: overline;
+    text-decoration-color: #D9A5B3;
+    text-decoration-style: dotted;
+}
+
+/* Membuat dekorasi pada heading 4 */
+h4 {
+    color: #9D6173;
+    text-decoration: underline;
+    text-decoration-color: #D9A5B3;
+    text-decoration-style: dotted;
+}
+
+/* Mengatur warna heading 5 dan 6 */
+h5,
+h6 {
+    color: #9D6173;
+}
+
+/* Membuat dekorasi garis atas dan bawah pada paragraf */
+p.ou {
+    text-decoration: overline underline;
+    text-decoration-color: #D9A5B3;
+}
+
+/* ============================== */
+/* Membuat Header Website         */
+/* ============================== */
+
+.header {
+    background-color: #F4E5DF;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 3px solid #D9A5B3;
+}
+
+/* Mengatur judul di dalam header */
+.header h1 {
+    color: #79574F;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+/* ============================== */
+/* Membuat Navigation Bar         */
+/* ============================== */
+
+.topnav {
+    overflow: hidden;
+    background-color: #B9828F;
+    box-shadow: 0 3px 8px #E8D5D0;
+}
+
+/* Mengatur tampilan link pada navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #FFF9F5;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Mengubah warna link saat mouse diarahkan */
+.topnav a:hover {
+    background-color: #FFF3EE;
+    color: #9D6173;
+}
+
+/* ============================== */
+/* Mengatur Layout Kolom          */
+/* ============================== */
+
+/* Mengatur padding pada setiap kolom */
+.column {
+    float: left;
+    padding: 15px;
+}
+
+/* Mengatur lebar kolom kiri dan kanan */
+.column.side {
+    width: 25%;
+}
+
+/* Mengatur lebar kolom tengah */
+.column.middle {
+    width: 50%;
+}
+
+/* Membersihkan float setelah semua kolom */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ============================== */
+/* Mengatur Tampilan Tabel        */
+/* ============================== */
+
+/* Mengatur ukuran dan garis tabel */
+table {
+    width: 70%;
+    margin: 20px auto;
+    border: 1px solid #C99BA5;
+    border-collapse: collapse;
+    background-color: #FFFCFA;
+    color: #654C48;
+}
+
+/* Mengatur garis dan jarak isi sel tabel */
+th,
+td {
+    border: 1px solid #D9B9B5;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Mengatur tampilan judul kolom tabel */
+th {
+    height: 35px;
+    background-color: #E8C7CE;
+    color: #654C48;
+}
+
+/* Memberikan warna berbeda pada baris genap */
+tr:nth-child(even) {
+    background-color: #F8EDE8;
+}
+
+/* Mengubah warna baris saat mouse diarahkan */
+tr:hover {
+    background-color: #F1D9DF;
+}
+
+/* ============================== */
+/* Mengatur Tampilan List         */
+/* ============================== */
+
+/* Mengatur warna dan jarak antarbaris list */
+ul,
+ol {
+    color: #775D58;
+    line-height: 1.8;
+}
+
+/* Mengubah warna penanda pada list */
+li::marker {
+    color: #B9828F;
+}
+
+/* ============================== */
+/* Mengatur Tampilan Gambar       */
+/* ============================== */
+
+/* Membatasi ukuran gambar agar tidak melebihi wadah */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ============================== */
+/* Membuat Footer Website         */
+/* ============================== */
+
+.footer {
+    background-color: #F4E5DF;
+    padding: 15px;
+    text-align: center;
+    border-top: 2px solid #D9A5B3;
+    margin-top: 25px;
+}
+
+/* Mengatur paragraf di dalam footer */
+.footer p {
+    color: #79574F;
+    margin: 0;
+}
+
+/* ============================== */
+/* Mengatur Tampilan Layar Kecil  */
+/* ============================== */
+
+@media screen and (max-width: 600px) {
+
+    /* Membuat kolom memenuhi lebar layar */
+    .column.side,
+    .column.middle {
+        width: 100%;
+    }
+
+    /* Menyusun link navbar secara vertikal */
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+
+    /* Memperbesar lebar tabel pada layar kecil */
+    table {
+        width: 95%;
+    }
+}

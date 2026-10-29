@@ -1,0 +1,959 @@
+body {
+
+    background-image: url("pink\ background.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+h2{
+
+    background-color: rgba(89, 41, 22, 0.811);
+
+    color: rgb(255, 215, 220);
+
+    text-align: center;
+
+}
+
+h1{
+
+    background-color: rgba(255, 219, 230, 0.858);
+
+    color: rgba(62, 25, 16, 0.664);
+
+    text-align: center;
+
+}
+
+div.biodata{
+
+    margin: 30px auto;
+
+    width: 70%;
+
+    background-color: rgba(220, 136, 155, 0.644);
+
+    color: rgba(90, 59, 44, 0.84);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+}
+
+div.content{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-self: center;
+
+    gap: 60px;
+
+}
+
+div.foto{
+
+    position: relative;
+
+    width: 250px;
+
+    height: 250px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 3px solid rgb(236, 213, 240);
+
+}
+
+div.foto img{
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.5s ease, opacity 0.5s ease;
+
+    border-radius: 12px;
+
+}
+
+.foto img.top{
+
+    opacity: 1;
+
+    z-index: 2;
+
+}
+
+.foto:hover img.top{
+
+    opacity: 0;
+
+    transform: scale(1.1);
+
+}
+
+.foto img.bottom{
+
+    opacity: 0;
+
+    z-index: 1;
+
+}
+
+.foto:hover img.bottom{
+
+    opacity: 1;
+
+    transform: scale(1.1);
+
+}
+
+img {
+
+    border-radius: 25px 25px 0px 0px;
+
+}
+
+
+/* ========================= */
+/* MAKANAN FAVORIT */
+/* ========================= */
+
+.food-container {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+    flex-wrap: nowrap;
+
+}
+
+
+/* SUSHI */
+
+div.polaroid.sushi {
+
+    width: 200px;
+
+    margin: 0;
+
+    padding: 8px;
+
+    border-radius: 25px;
+
+    background-color: rgba(245, 245, 220, 0.461);
+
+    color: black;
+
+    box-shadow: 0 2px 4px 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.polaroid.sushi img {
+
+    width: 184px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+/* MATCHA CREPE CAKE */
+
+div.polaroid.matcha-crepe-cake {
+
+    width: 200px;
+
+    margin: 0;
+
+    padding: 8px;
+
+    border-radius: 25px;
+
+    background-color: rgba(245, 245, 220, 0.461);
+
+    color: black;
+
+    box-shadow: 0 2px 4px 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div.polaroid.matcha-crepe-cake img {
+
+    width: 184px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+/* FISH AND CHIPS */
+
+div.polaroid.fish-and-chips {
+
+    width: 200px;
+
+    margin: 0;
+
+    padding: 8px;
+
+    border-radius: 25px;
+
+    background-color: rgba(245, 245, 220, 0.461);
+
+    color: black;
+
+    box-shadow: 0 2px 4px 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div.polaroid.fish-and-chips img {
+
+    width: 184px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+/* SOUP DUMPLING */
+
+div.polaroid.soup-dumpling {
+
+    width: 200px;
+
+    margin: 0;
+
+    padding: 8px;
+
+    border-radius: 25px;
+
+    background-color: rgba(245, 245, 220, 0.461);
+
+    color: black;
+
+    box-shadow: 0 2px 4px 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div.polaroid.soup-dumpling img {
+
+    width: 184px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+/* PHO */
+
+div.polaroid.pho {
+
+    width: 200px;
+
+    margin: 0;
+
+    padding: 8px;
+
+    border-radius: 25px;
+
+    background-color: rgba(245, 245, 220, 0.461);
+
+    color: black;
+
+    box-shadow: 0 2px 4px 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.polaroid.pho img {
+
+    width: 184px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+div.container {
+
+    text-align: center;
+
+    padding: 10px 10px;
+
+}
+
+div.container.sushi {
+
+    text-align: center;
+
+    padding: 10px 10px;
+
+}
+
+div.container.pho {
+
+    text-align: center;
+
+    padding: 10px 10px;
+
+}
+
+.polaroid {
+
+    transition: transform 0.3s ease;
+
+}
+
+.polaroid:hover {
+
+    transform: scale(1.05);
+
+}
+
+.judul-makanan {
+
+    background-color: rgba(255, 219, 228, 0.676);
+
+    color:rgba(73, 45, 23, 0.564);
+
+    text-align: center;
+
+    width: 100%;
+
+    margin: 30px auto 20px;
+
+    padding: 10px;
+
+    border-radius: 0;
+
+    font-size: 30px;
+
+}
+
+
+/* ========================= */
+/* FILM FAVORIT */
+/* ========================= */
+
+.judul-film {
+
+    background-color: rgba(255, 219, 228, 0.676);
+
+    color: rgba(73, 45, 23, 0.564);
+
+    text-align: center;
+
+    width: 100%;
+
+    margin: 30px auto 20px;
+
+    padding: 10px;
+
+    border-radius: 0;
+
+    font-size: 30px;
+
+}
+
+.movie-container {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+    flex-wrap: nowrap;
+
+}
+
+.movie {
+
+    width: 200px;
+
+    margin: 0;
+
+    padding: 8px;
+
+    border-radius: 25px;
+
+    background-color: rgba(245, 245, 220, 0.461);
+
+    color: black;
+
+    box-shadow: 0 2px 4px 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.movie img {
+
+    width: 184px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.container-movie {
+
+    text-align: center;
+
+    padding: 10px 10px;
+
+}
+
+.movie {
+
+    transition: transform 0.3s ease;
+
+}
+
+.movie:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+/* ========================= */
+/* LAGU FAVORIT */
+/* ========================= */
+
+.judul-lagu {
+
+    background-color: rgba(255, 219, 228, 0.676);
+
+    color: rgba(73, 45, 23, 0.564);
+
+    text-align: center;
+
+    width: 100%;
+
+    margin: 30px auto 20px;
+
+    padding: 10px;
+
+    border-radius: 0;
+
+    font-size: 30px;
+
+}
+
+.song-container {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+    flex-wrap: nowrap;
+
+}
+
+.song {
+
+    width: 200px;
+
+    margin: 0;
+
+    padding: 8px;
+
+    border-radius: 25px;
+
+    background-color: rgba(245, 245, 220, 0.461);
+
+    color: black;
+
+    box-shadow: 0 2px 4px 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.song img {
+
+    width: 184px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.container-song {
+
+    text-align: center;
+
+    padding: 10px 10px;
+
+}
+
+.song {
+
+    transition: transform 0.3s ease;
+
+}
+
+.song:hover {
+
+    transform: scale(1.05);
+
+}
+
+/* ========================= */
+/* BUKU FAVORIT */
+/* ========================= */
+
+.judul-buku {
+
+    background-color: rgba(255, 219, 228, 0.676);
+
+    color: rgba(73, 45, 23, 0.564);
+
+    text-align: center;
+
+    width: 100%;
+
+    margin: 30px auto 20px;
+
+    padding: 10px;
+
+    border-radius: 0;
+
+    font-size: 30px;
+
+}
+
+.book-container {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+    flex-wrap: nowrap;
+
+}
+
+.book {
+
+    width: 200px;
+
+    margin: 0;
+
+    padding: 8px;
+
+    border-radius: 25px;
+
+    background-color: rgba(245, 245, 220, 0.461);
+
+    color: black;
+
+    box-shadow: 0 2px 4px 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.book img {
+
+    width: 184px;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.container-book {
+
+    text-align: center;
+
+    padding: 10px 10px;
+
+}
+
+.book {
+
+    transition: transform 0.3s ease;
+
+}
+
+.book:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+/* ========================= */
+/* SERIES FAVORIT */
+/* ========================= */
+
+.judul-series {
+
+    background-color: rgba(255, 219, 228, 0.676);
+
+    color: rgba(73, 45, 23, 0.564);
+
+    text-align: center;
+
+    width: 100%;
+
+    margin: 30px auto 20px;
+
+    padding: 10px;
+
+    border-radius: 0;
+
+    font-size: 30px;
+
+}
+
+.series-container {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+    flex-wrap: nowrap;
+
+}
+
+.series {
+
+    width: 200px;
+
+    margin: 0;
+
+    padding: 8px;
+
+    border-radius: 25px;
+
+    background-color: rgba(245, 245, 220, 0.461);
+
+    color: black;
+
+    box-shadow: 0 2px 4px 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.series img {
+
+    width: 184px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.container-series {
+
+    text-align: center;
+
+    padding: 10px 10px;
+
+}
+
+.series {
+
+    transition: transform 0.3s ease;
+
+}
+
+.series:hover {
+
+    transform: scale(1.05);
+
+}
+
+.polaroid:hover,
+.movie:hover,
+.song:hover,
+.book:hover,
+.series:hover {
+
+    transform: translateY(-10px) rotate(2deg) scale(1.05);
+
+}
+
+.judul-makanan,
+.judul-film,
+.judul-lagu,
+.judul-buku,
+.judul-series {
+
+    animation: titleBounce 2s ease-in-out infinite;
+
+}
+
+@keyframes titleBounce {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+}
+
+body {
+
+    animation: fadeIn 1.5s ease;
+
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+h1 {
+
+    animation: softGlow 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes softGlow {
+
+    from {
+
+        box-shadow: 0 0 5px rgba(255, 182, 193, 0.3);
+
+    }
+
+    to {
+
+        box-shadow: 0 0 20px rgba(255, 182, 193, 0.8);
+
+    }
+
+}
+
+body {
+    animation: fadeIn 1.5s ease;
+}
+
+.polaroid:hover,
+.movie:hover,
+.song:hover,
+.book:hover,
+.series:hover {
+
+    transform: translateY(-10px) rotate(2deg) scale(1.05);
+
+}
+
+h1 {
+    animation: softGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes softGlow {
+
+    from {
+        box-shadow: 0 0 5px rgba(255, 182, 193, 0.3);
+    }
+
+    to {
+        box-shadow: 0 0 20px rgba(255, 182, 193, 0.8);
+    }
+
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer {
+
+    width: 80%;
+
+    margin: 50px auto 20px;
+
+    padding: 20px;
+
+    background-color: rgba(255, 219, 228, 0.7);
+
+    border: 3px solid rgba(255, 245, 245, 0.8);
+
+    border-radius: 25px;
+
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.6);
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: rgba(73, 45, 23, 0.7);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.footer:hover {
+
+    transform: scale(1.02);
+
+    box-shadow: 0 0 25px rgba(255, 182, 193, 0.8);
+
+}
+
+.footer p {
+
+    margin: 8px;
+
+    font-size: 16px;
+
+}
+
+.footer p:first-child {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}

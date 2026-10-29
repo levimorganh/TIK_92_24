@@ -1,0 +1,623 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.sts-page {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #34484b;
+
+    background-image:
+        linear-gradient(
+            rgba(220, 235, 232, 0.55),
+            rgba(220, 235, 232, 0.55)
+        ),
+        url("athens.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+/* ================= GREECE HEADER ================= */
+
+.sts-page > header {
+    padding: 35px 20px 45px;
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(60, 120, 130, 0.55),
+            rgba(60, 120, 130, 0.55)
+        ),
+        url("athens.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    border: 5px solid white;
+}
+
+/* Tulisan kecil di atas judul */
+.sts-page > header p {
+    margin: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+/* Judul utama */
+.sts-page > header h1 {
+    margin: 12px 0 8px;
+    font-size: 45px;
+    font-weight: normal;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Efek saat judul disentuh mouse */
+.sts-page > header h1:hover {
+    color: #ffe3a3;
+    font-size: 50px;
+}
+
+/* Subtitle di bawah judul */
+.sts-page > header h2 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: italic;
+    color: white;
+}
+
+
+/* ================= CONTENT BOX ================= */
+
+.sts-page .kotak {
+    max-width: calc(100% - 400px);
+    margin: 30px auto;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.90);
+    border-radius: 12px;
+    border: 2px solid #8fc6cc;
+
+    box-shadow: 3px 4px 8px rgba(50, 90, 90, 0.18);
+
+    animation: muncul 1s ease;
+}
+
+.sts-page .kotak h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #39717a;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+
+/* ================= GREECE DESCRIPTION ================= */
+
+.sts-page .cerita {
+    background: #eef8f8;
+    padding: 18px 22px;
+    margin: 18px 0;
+    border-radius: 8px;
+    border-left: 5px solid #6faeb5;
+}
+
+.sts-page .cerita h3 {
+    margin-top: 0;
+    color: #39717a;
+    font-size: 19px;
+}
+
+.sts-page .cerita p,
+.sts-page .info p,
+.sts-page .ending p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.sts-page .cerita p {
+    margin-bottom: 0;
+    line-height: 1.7;
+    font-size: 14px;
+    color: #555f60;
+}
+
+
+/* ================= PHOTO ALBUM ================= */
+
+.sts-page .album {
+    text-align: center;
+}
+
+.sts-page .kecil {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #6b9296;
+}
+
+.sts-page .album h2 {
+    margin-bottom: 30px;
+}
+
+.sts-page .foto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.sts-page .foto {
+    width: 190px;
+    padding: 8px 8px 12px;
+    background: white;
+
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.sts-page .foto img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.sts-page .foto p {
+    margin: 9px 0 0;
+    font-size: 12px;
+    color: #555;
+}
+
+
+/* ================= PHOTO ANGLES ================= */
+
+.sts-page .foto1 {
+    transform: rotate(-3deg);
+}
+
+.sts-page .foto2 {
+    transform: rotate(2deg);
+}
+
+.sts-page .foto3 {
+    transform: rotate(-2deg);
+}
+
+.sts-page .foto4 {
+    transform: rotate(3deg);
+}
+
+
+/* ================= PHOTO HOVER ================= */
+
+.sts-page .foto:hover {
+    transform: rotate(0deg) translateY(-10px) scale(1.05);
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+.sts-page .foto:hover img {
+    transform: scale(1.04);
+}
+
+
+/* ================= MAP ================= */
+
+.sts-page .peta-section > p {
+    color: #596667;
+    font-size: 14px;
+    text-align: center;
+}
+
+.sts-page .peta {
+    position: relative;
+    margin-top: 25px;
+}
+
+.sts-page .peta > img {
+    display: block;
+    width: 100%;
+    border: 3px solid #77aeb3;
+    transition: 0.3s;
+}
+
+.sts-page .peta > img:hover {
+    transform: scale(1.01);
+}
+
+
+/* ================= MAP MARKERS ================= */
+
+.sts-page .tempat {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    background: #df7566;
+    border: 3px solid white;
+    border-radius: 50%;
+
+    transition: 0.25s;
+    animation: pulse 2s infinite;
+}
+
+.sts-page .tempat span {
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 5px 7px;
+    background: #39717a;
+    color: white;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    white-space: nowrap;
+
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.sts-page .tempat:hover {
+    transform: scale(1.4);
+    background: #f29a87;
+}
+
+.sts-page .tempat:hover span {
+    opacity: 1;
+}
+
+
+/* ================= MAP POSITIONS ================= */
+
+.sts-page .acropolis {
+    left: 38%;
+    top: 58%;
+}
+
+.sts-page .academy {
+    left: 65%;
+    top: 30%;
+}
+
+.sts-page .temple {
+    left: 23%;
+    top: 43%;
+}
+
+.sts-page .stadium {
+    left: 88%;
+    top: 61%;
+}
+
+.sts-page .garden {
+    left: 62%;
+    top: 67%;
+}
+
+.sts-page .kapnikarea {
+    left: 48%;
+    top: 39%;
+}
+
+
+/* ================= PLACE INFORMATION ================= */
+
+.sts-page .tempat-section h2 {
+    margin-bottom: 30px;
+}
+
+.sts-page .info {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 22px;
+
+    padding: 15px;
+    margin-bottom: 22px;
+
+    background: #f4fbfb;
+    border: 1px solid #a9cdd0;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.sts-page .info img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.sts-page .info h3 {
+    margin-top: 5px;
+    color: #39717a;
+    font-size: 23px;
+}
+
+.sts-page .info p {
+    color: #5d6566;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.sts-page .info:hover {
+    transform: translateY(-4px);
+    box-shadow: 2px 5px 10px rgba(70, 100, 100, 0.18);
+}
+
+.sts-page .info:hover img {
+    transform: scale(1.03);
+}
+
+
+/* ================= GREEK PILLARS ================= */
+
+.sts-page .pillar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+
+    width: 300px;
+    height: 100vh;
+    object-fit: fill;
+
+    z-index: 5;
+    pointer-events: none;
+
+    animation: pillarFloat 4s ease-in-out infinite;
+}
+
+.sts-page .pillar-left {
+    left: -70px;
+}
+
+.sts-page .pillar-right {
+    right: -70px;
+    transform: scaleX(-1);
+    animation-name: pillarFloatRight;
+}
+
+@keyframes pillarFloat {
+    0%, 100% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 0 -4px;
+    }
+}
+
+@keyframes pillarFloatRight {
+    0%, 100% {
+        translate: 0 0;
+        rotate: 0deg;
+    }
+
+    50% {
+        translate: 0 -4px;
+        rotate: 0deg;
+    }
+}
+
+
+/* ================= FALLING DECORATIONS ================= */
+
+.sts-page .olive,
+.sts-page .star {
+    position: fixed;
+    top: -50px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+
+/* Olive decorations */
+
+.sts-page .olive {
+    width: 30px;
+    animation: jatuh 8s linear infinite;
+}
+
+.sts-page .olive1 {
+    left: 15%;
+}
+
+.sts-page .olive2 {
+    left: 80%;
+    width: 24px;
+    animation-delay: 4s;
+    animation-duration: 10s;
+}
+
+
+/* Star decorations */
+
+.sts-page .star {
+    width: 22px;
+    animation: jatuh 7s linear infinite;
+}
+
+.sts-page .star1 {
+    left: 50%;
+    animation-delay: 2s;
+}
+
+.sts-page .star2 {
+    left: 32%;
+    width: 17px;
+    animation-delay: 5s;
+    animation-duration: 9s;
+}
+
+
+/* Falling animation */
+
+@keyframes jatuh {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(50vh) translateX(30px) rotate(180deg);
+    }
+
+    100% {
+        transform: translateY(110vh) translateX(-30px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+/* ================= ENDING ================= */
+
+.sts-page .ending {
+    text-align: center;
+    padding: 40px 30px;
+    margin-bottom: 60px;
+}
+
+.sts-page .ending h2 {
+    text-align: center;
+    font-size: 32px;
+    margin: 10px 0;
+    color: #39717a;
+}
+
+.sts-page .ending p:not(.kecil) {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.7;
+    color: #5d6566;
+}
+
+.sts-page .ending h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #39717a;
+    font-size: 18px;
+}
+
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        translate: 0 15px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(223, 117, 102, 0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 8px rgba(223, 117, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(223, 117, 102, 0);
+    }
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+    .sts-page .kotak {
+        max-width: calc(100% - 240px);
+    }
+
+    .sts-page .pillar {
+        width: 190px;
+    }
+
+    .sts-page .pillar-left {
+        left: -55px;
+    }
+
+    .sts-page .pillar-right {
+        right: -55px;
+    }
+}
+
+@media (max-width: 700px) {
+    .sts-page .kotak {
+        max-width: calc(100% - 30px);
+        margin: 20px auto;
+        padding: 22px 18px;
+    }
+
+    .sts-page > header h1 {
+        font-size: 32px;
+    }
+
+    .sts-page > header h1:hover {
+        font-size: 34px;
+    }
+
+    .sts-page > header h2 {
+        font-size: 13px;
+    }
+
+    .sts-page .foto {
+        width: 170px;
+    }
+
+    .sts-page .foto img {
+        height: 145px;
+    }
+
+    .sts-page .info {
+        grid-template-columns: 1fr;
+    }
+
+    .sts-page .info img {
+        height: 220px;
+    }
+
+    .sts-page .pillar {
+        display: none;
+    }
+
+    .sts-page .olive,
+    .sts-page .star {
+        z-index: 1;
+    }
+}
+
+/* Keep shared website header and navbar consistent */
+.sts-page > .header {
+    /* Let style.css control the shared header */
+}
+
+.sts-page > .topnav {
+    /* Let style.css control the shared navigation bar */
+}

@@ -1,0 +1,142 @@
+
+/* =========================
+   GENERAL PAGE STYLE
+========================= */
+
+body.list-page {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF9F5;
+    color: #654C48;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+.list-page h5,
+.list-page h6 {
+    margin: 12px 25px;
+    color: #654C48;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* =========================
+   FRUIT LIST
+========================= */
+
+.list-page ol {
+    background-color: #E8C7CE;
+    border: 5px solid #B9828F;
+    padding: 12px 12px 12px 40px;
+    margin: 10px 20px 18px;
+}
+
+.list-page ol li {
+    background-color: #FFF0E9;
+    color: #654C48;
+    padding: 7px;
+    margin: 4px 0;
+    font-size: 13px;
+    border-bottom: 2px solid #E8C7CE;
+}
+
+.list-page ol li.stroberi {
+    background-color: #D9A5B3;
+    color: #654C48;
+    font-weight: bold;
+}
+
+/* =========================
+   LOREM IPSUM LIST
+========================= */
+
+.list-page h5 + ul {
+    background-color: #D8B9AD;
+    padding: 12px 12px 12px 35px;
+    margin: 10px 20px 18px;
+}
+
+.list-page h5 + ul li.b {
+    background-color: #F8E8E4;
+    color: #654C48;
+    padding: 7px;
+    margin: 4px 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =========================
+   ICON LIST
+========================= */
+
+.list-page ul.C {
+    background-color: #D8B9AD;
+    padding: 12px 12px 12px 35px;
+    margin: 10px 20px 18px;
+}
+
+.list-page ul.C li.c {
+    background-color: #F3D9DF;
+    color: #654C48;
+    padding: 8px;
+    margin: 4px 0;
+    font-size: 13px;
+}
+
+.list-page ul.C li.c svg {
+    width: 18px;
+    height: 18px;
+    fill: #9D6173;
+    vertical-align: middle;
+}
+
+.list-page ul.C li.c p {
+    display: inline;
+    margin: 0 0 0 6px;
+    color: #654C48;
+    font-size: 13px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.list-page .footer {
+    background-color: #F4E5DF;
+    color: #654C48;
+    text-align: center;
+    padding: 12px;
+    margin-top: 18px;
+    border-top: 3px solid #D9A5B3;
+}
+
+.list-page .footer p {
+    margin: 5px;
+    font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 600px) {
+    .list-page h5,
+    .list-page h6 {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .list-page ol,
+    .list-page h5 + ul,
+    .list-page ul.C {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .list-page ul.C li.c p {
+        display: inline;
+    }
+}
